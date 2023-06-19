@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Reflection Home Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+
+
+
+
+  /* body style */
+body {
+background-color: black;
+}
+
+
+
+/* logo design */
+.logo {
+
+  width: 13rem;
+  height: 11rem;
+}
+
+/* Navbar style */
+
+.navbar-nav {
+  margin-left: 8rem;
+  margin-top: 1.875rem;
+  
+}
+
+.navbar-nav a:hover {
+  color:aqua!important; 
+}
+
+.navbar .bi {
+  color: white;
+  margin-left: 1rem;
+}
+
+/* Carousel style */
+
+   .carousel-caption {
+  animation: fade-in 3s ease-in-out;
+}
+
+
+.carousel-item img {
+  filter: brightness(40%);
+}
+
+
+
+
+/* Animation style */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+/* Drop down navbar style */
+
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-menu a {
+  color: #343a40;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e9ecef;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.category-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.25rem;
+  color: #333;
+  text-shadow: 0.125rem 0.125rem #f10d0d;
+}
+
+@media (min-width: 48rem ) {
+  .navbar-nav.column-two {
+    margin-left: 3.125rem;
+  }
+}
+
+/* Gallery image hover */
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.zoom-hover{
+  transform: scale(1.5);
+}
+
+.hover-opacity {
+  transition: opacity 0.3s ease;
+}
+
+.hover-opacity:hover {
+  opacity: 0.8; 
+}
+
+.bi-facebook:hover{
+
+  color:  rgb(59, 89, 152);
+
+}
+.bi-whatsapp:hover{
+
+color: rgb(37, 211, 102)  ;
+
+}
+.bi-instagram:hover{
+
+color: rgb(193, 53, 132) ;
+
+}
+.bi-telegram:hover{
+
+color: rgb(27, 119, 193) ;
+
+}
+.bi-twitter:hover{
+
+color: rgb(29, 161, 242) ;
+
+}
+.bi-youtube:hover{
+
+color: rgb(255, 0, 0);
+
+}
+
+.column-two {
+  margin-left: 12.5rem; 
+  margin-top: -7.875rem;
+}
+
+
+    
+</style>
+    
+</head>
+<body>
+
+    <!-- navbar start -->
+
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="font-family: 'Times New Roman', Times, serif; font-size: 18px;">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html"><img src="ccr.png" alt="" class="logo"></a>
+        <button style="color: aliceblue; background-color: #e9ecef;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-white">
+            <a class="nav-link text-white" aria-current="page" href="index.html" style="margin-right: 2.5rem;">Home</a>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="margin-right: 2.5rem;">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <a class="dropdown-item" href="Drawing-room.html " target="_blank">Drawing room Mirrors</a>
+                      <a class="dropdown-item" href="Bedroom-mirrors.html" target="_blank">Bedroom Mirrors</a>
+                      <a class="dropdown-item" href="Bathroom.html" target="_blank">Bathroom Mirrors</a>
+                      <a class="dropdown-item" href="Dressing.html" target="_blank">Dressing Mirrors</a>
+                    </div>
+                    
+                    <div class="col-md-6 column-two " >
+                      <a class="dropdown-item" href="Wooden frame mirror.html" target="_blank">Wooden Frame</a>
+                      <a class="dropdown-item" href="Acrylic-border.html" target="_blank">Acrylic Bordered</a>
+                      <a class="dropdown-item" href="Metal-border.html" target="_blank">Metal Bordered</a>
+                      <a class="dropdown-item" href="Decorative-mirrors.html" target="_blank">Decorative Mirrors</a>
+                      <a class="dropdown-item" href="LED-mirror.html" target="_blank">LED Mirrors </a>
+                      <a class="dropdown-item" href="Bluetooth-mirror.html" target="_blank">Blue-tooth Mirrors</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <a class="nav-link text-white" href="About.html"  target="_blank"style="margin-right: 2.5rem;">About us</a>
+            <a class="nav-link text-white" href="Contact.html"  target="_blank"style="margin-right: 2.5rem;">Contact Us</a>
+          </div>
+          <div class="navbar-nav text-white" style="margin-left: 10.625rem;">
+            <a class="nav-link" href="#">
+              <i class="bi bi-search" style="font-size: 1.5rem;" data-toggle="tooltip" title="search"></i>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="bi bi-heart" style="font-size: 1.5rem;" data-toggle="tooltip" title="Wishlist"></i>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="bi bi-cart" style="font-size: 1.5rem;" data-toggle="tooltip" title="View Cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+
+    <Script>
+      
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+
+    <!-- navbar end -->
+
+    <!-- Carousel start -->
+
+    
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slider1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block ">
+            <div class="custom-caption " style="font-family: 'Times New Roman', Times, serif;">
+            <h5  style="font-size: 1.875rem;"><b>Reflect your Style with <br> our Mirrors</b></h5>
+            <p  style="font-size: 1.0625rem;">Find the Perfect Mirror to match <br>Your Home Decor.</p>
+          </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Slider2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="custom-caption" style="font-family: 'Times New Roman', Times, serif;">
+            <h5 style="font-size: 1.875rem;"><b> Brighten up your Space <br>With our Mirrors</b></h5>
+            <p style="font-size: 1.0625rem;">Add Light and Depth to any Room <br> With our Collection of Mirrors</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slider3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="custom-caption" style="font-family: 'Times New Roman', Times, serif;">
+            <h5 style="font-size: 1.875rem"><b>More Precious & <br>Luxurious Fittings</b></h5>
+            <p style="font-size: 1.0625rem;">Only if the Reflection could lie.<br>Find Peace with our Exotic Range of Mirrors !</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slider4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="custom-caption" style="font-family: 'Times New Roman', Times, serif;">
+            <h5 style="font-size: 1.875rem;"><b>Make a Statement with <br>Our Mirrors</b></h5>
+            <p style="font-size: 1.0625rem;">From Classic to Contemporary, We have a Mirror <br>To Suit every Taste</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slider5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="custom-caption" style="font-family: 'Times New Roman', Times, serif;">
+            <h5 style="font-size: 1.875rem;"><b>Create an illusion of Space <br>With our Mirrors</b></h5>
+            <p style="font-size: 1.0625rem;">Enhance your Living Space with our Range of Mirrors <br>That create an illusion of more Space</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slider6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="custom-caption" style="font-family: 'Times New Roman', Times, serif;">
+            <h5 style="font-size: 1.875rem;"><b>Reflecting Elegance</b></h5>
+            <p style="font-size: 1.0625rem;">Add Sophistication to your Home <br>With our Premium Mirrors</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+
+    <!-- Carousel end -->
+
+   <!-- Card start -->
+
+  <div class="container animate-on-scroll">
+    <div class="row mt-5">
+      <div class="col ">
+       <img src="Banner.jpeg" alt="" height="555px" width="100%" class="animate-on-scroll">
+      </div>
+      <div class="col">
+        <div class="row ">
+          <div class="col  ">
+            <img src="P1.jpg" alt="" height="266px" width="100%" class="animate-on-scroll">
+          </div>
+          <div class="col  "><img src="P2.jpg" alt="" height="266px" width="100%" class="animate-on-scroll"></div>
+        </div>
+        <div class="row">
+          <div class="col mt-3 "><img src="P3.jpg" alt="" height="266px" width="100%" class="animate-on-scroll"></div>
+          <div class="col mt-3 "><img src="P4.jpg" alt="" height="266px" width="100%" class="animate-on-scroll"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="gallery-heading text-info text-center mt-5" style="font-family: 'Times New Roman', Times, serif;">
+
+    <h1>The Artisan's Reflection</h1>
+    <p class="text-white"> Discover Exquisite Mirrors in our Showcase</p>
+
+  </div>
+
+   <!-- Card end -->
+
+   <!-- Gallery card -->
+
+   <!-- 1st row -->
+
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+          <img src="Gallery/G1.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-opacity img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+          <img src="Gallery/G2.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="img-fluid">
+          <img src="Gallery/G2a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image  img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+          <img src="Gallery/G3.jpg" alt="" width="100%" height="250px" style="object-fit: cover;"class="img-fluid">
+          <img src="Gallery/G3a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+          <img src="Gallery/G4.jpg" alt="" width="100%" height="250px" style="object-fit: cover;"class="img-fluid">
+          <img src="Gallery/G4a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+          <img src="Gallery/G5.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-opacity img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+          <img src="Gallery/G6.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="img-fluid">
+          <img src="Gallery/G6a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- 2nd Row -->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+          <img src="Gallery/G7.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="img-fluid">
+          <img src="Gallery/G7a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">      </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+        <img src="Gallery/G8.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="img-fluid">
+        <img src="Gallery/G8a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+        <img src="Gallery/G9.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="img-fluid">
+        <img src="Gallery/G9a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+        <img src="Gallery/G10.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="img-fluid">
+        <img src="Gallery/G10a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+          <img src="Gallery/G11.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="img-fluid">
+          <img src="Gallery/G11a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+        <div class="image-container">
+        <img src="Gallery/G12.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="img-fluid">
+        <img src="Gallery/G12a.jpg" alt="" width="100%" height="250px" style="object-fit: cover;" class="hover-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="quote text-info">
+
+<h1 style="text-align: center; margin-top: 100px; font-family: 'Times New Roman', Times, serif;">"Mirror, Mirror on the Wall,<br> Reveal the Strength and Beauty Within us all"</h1>
+
+</div>
+
+  <!-- Gallery video -->
+
+  <div class="container " style="object-fit: fill; margin-top:120px;">
+
+    <video autoplay muted loop width="1117px">
+      <source src="Gallery/Gvideo.mp4" type="video/mp4">
+      Your browser does not support HTML video.
+    </video>
+
+  </div>
+
+   <!-- Gallery card end -->
+
+   <!-- About us start -->
+
+   <div class="history text-info" style="font-family: 'Times New Roman', Times, serif; text-align: center; margin-top: 50px;">
+     <h1>Unveiling Our Legacy</h1>
+     <br>
+     <p  style="color: white; font-size: 22px;"> "We are Passionate about helping you find the Perfect Mirror to Enhance the Beauty and Functionality of your Space. 
+       With a Rich History in the Industry, Our Company has been Providing High-Quality Mirrors to Satisfied Customers 
+       for over a Decade. Our Collection features an Extensive range of Mirrors, From Elegant and Timeless Designs to
+        Modern and Contemporary Styles. Whether you're looking for a statement piece for your living room, a Sleek Mirror 
+        for your Bathroom, or a Functional Mirror for your Bedroom, We have a Diverse Selection to Cater to your needs. 
+        Our Commitment to Exceptional Craftsmanship and Attention to detail Ensures that each Mirror in our Collection is not 
+        only Visually Stunning but also built to last. We Strive to provide a Seamless Shopping Experience with Excellent 
+        Customer Service, Offering Expert Guidance and Support to help you make the Right Choice. Discover the Transformative 
+        Power of Mirrors and Elevate your space with our Exceptional Collection Today!"</p>
+   </div>
+
+   <!-- Footer start -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start ">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div style="font-size: 25px; font-family: 'Times New Roman', Times, serif;" class="me-5 d-none d-lg-block text-info">
+      <span>Get Connected with us on Social Networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i style="font-size:35px;" class="bi bi-facebook"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=92165180043" target="_blank" class="me-4 link-secondary">
+          <i  style="font-size:35px;"class="bi bi-whatsapp"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i style="font-size:35px;" class="bi bi-instagram"></i style="font-size:35px;">
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i  style="font-size:35px;"class="bi bi-youtube"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i  style="font-size:35px;"class="bi bi-telegram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i  style="font-size:35px;"class="bi bi-twitter"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 text-info"  style="font-family: 'Times New Roman', Times, serif;">
+            <i class="fas fa-gem me-3 text-secondary"></i>Clear Reflections
+          </h6>
+          <p class="text-white"  style="font-family: 'Times New Roman', Times, serif;">
+            With over 20 Years of Experience in the Architectural and Interior Design Industry, 
+            We are a Renowned Company Catering to Residential and Commercial Projects throughout Pakistan. 
+            Having Successfully Completed over 1000 Projects, We have Earned a Reputation for our Expertise and Dedication.  
+             Join us on this exciting Journey as we Revolutionize the Online Design Landscape and Create 
+             Stunning Spaces that Inspire and Captivate.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="font-family: 'Times New Roman', Times, serif;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-info">
+            Products
+          </h6>
+          <p class="text-white">
+            <a href="Bedroom-mirrors.html" class="text-reset">Bedroom Mirrors</a>
+          </p>
+          <p class="text-white">
+            <a href="Bathroom.html" class="text-reset">Bathroom Mirrors</a>
+          </p>
+          <p class="text-white">
+            <a href="Drawing-room.html" class="text-reset">Drawing room Mirrors</a>
+          </p>
+          <p class="text-white">
+            <a href="LED-mirror.html" class="text-reset">LED Mirrors</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="font-family: 'Times New Roman', Times, serif;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-info">
+            Useful links
+          </h6>
+          <p class="text-white">
+            <a href="#!" class="text-reset">My Accounts</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">FAQ's</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Wish list</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Return and Breakage Policy</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="font-family: 'Times New Roman', Times, serif;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-info" >Contact</h6>
+          <p class="text-white"><i class="fas fa-home me-1 text-secondary"></i> Near CDC house Shahrah-e-Faisal Road Karachi </p>
+          <p class="text-white">
+            <i class="fas fa-envelope me-1 text-secondary"></i>
+            clearreflection@gmail.com
+          </p>
+          <p class="text-white"><i class="fas fa-phone me-1 text-secondary"></i> 0316-5180043</p>
+          <p class="text-white"><i class="fas fa-print me-1 text-secondary"></i> 0349-3378370</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 text-success" style="background-color: rgba(0, 0, 0, 0.025); font-family: 'Times New Roman', Times, serif;">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="index.html">clearreflections.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+   <!-- Footer end -->
+    
+</body>
+</html>
+
+
+

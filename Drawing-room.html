@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drawing Room Mirrors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+
+/* body style */
+body {
+background-color: black;
+}
+
+
+
+/* logo design */
+.logo {
+
+  width: 13rem;
+  height: 11rem;
+}
+
+/* Navbar style */
+
+.navbar-nav {
+  margin-left: 8rem;
+  margin-top: 1.875rem;
+  
+}
+
+.navbar-nav a:hover {
+  color:aqua!important; 
+}
+
+.navbar .bi {
+  color: white;
+  margin-left: 1rem;
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-menu a {
+  color: #343a40;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e9ecef;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.category-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.25rem;
+  color: #333;
+  text-shadow: 0.125rem 0.125rem #f10d0d;
+}
+
+@media (min-width: 48rem ) {
+  .navbar-nav.column-two {
+    margin-left: 3.125rem;
+  }
+}
+
+/* Drop down alligment */
+
+.column-two {
+  margin-left: 12.5rem; 
+  margin-top: -7.875rem;
+}
+
+.bi-facebook:hover{
+
+color:  rgb(59, 89, 152);
+
+}
+.bi-whatsapp:hover{
+
+color: rgb(37, 211, 102)  ;
+
+}
+.bi-instagram:hover{
+
+color: rgb(193, 53, 132) ;
+
+}
+.bi-telegram:hover{
+
+color: rgb(27, 119, 193) ;
+
+}
+.bi-twitter:hover{
+
+color: rgb(29, 161, 242) ;
+
+}
+.bi-youtube:hover{
+
+color: rgb(255, 0, 0);
+
+}
+
+/* Animation of main image text */
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animated-text {
+  color: white;
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 19rem;
+  opacity: 0; /* Initial opacity of 0 for fade-in effect */
+  animation: slide-in 1s ease-in-out forwards;}
+
+  @keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+    
+}
+.card-title:hover{
+    color: #0dcaf0;
+}
+
+.card-text {
+    color: red;
+    font-size: 22px;
+}
+
+.card-body {
+    background-color: black;
+}
+
+.card {
+
+    border: 0;
+}
+
+/* Card hover image */
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.zoom-hover{
+  transform: scale(1.5);
+}
+
+.hover-opacity {
+  transition: opacity 0.3s ease;
+}
+
+.hover-opacity:hover {
+  opacity: 0.8; 
+}
+
+.pr-detail {
+
+color: white;
+
+}
+
+    </style>
+</head>
+<body>
+
+     <!-- navbar start -->
+
+    
+
+     <nav class="navbar navbar-expand-lg navbar-light" style="font-family: 'Times New Roman', Times, serif; font-size: 18px;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="index.html"><img src="ccr.png" alt="" class="logo"></a>
+          <button style="color: aliceblue; background-color: #e9ecef;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-white">
+              <a class="nav-link text-white" aria-current="page" href="index.html" style="margin-right: 2.5rem;">Home</a>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="margin-right: 2.5rem;">
+                  Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <a class="dropdown-item" href="Drawing-room.html " target="_blank">Drawing room Mirrors</a>
+                        <a class="dropdown-item" href="Bedroom-mirrors.html" target="_blank">Bedroom Mirrors</a>
+                        <a class="dropdown-item" href="Bathroom.html" target="_blank">Bathroom Mirrors</a>
+                        <a class="dropdown-item" href="Dressing.html" target="_blank">Dressing Mirrors</a>
+                      </div>
+                      
+                      <div class="col-md-6 column-two " >
+                        <a class="dropdown-item" href="Wooden frame mirror.html" target="_blank">Wooden Frame</a>
+                        <a class="dropdown-item" href="Acrylic-border.html" target="_blank">Acrylic Bordered</a>
+                        <a class="dropdown-item" href="Metal-border.html" target="_blank">Metal Bordered</a>
+                        <a class="dropdown-item" href="Decorative-mirrors.html" target="_blank">Decorative Mirrors</a>
+                        <a class="dropdown-item" href="LED-mirror.html" target="_blank">LED Mirrors </a>
+                        <a class="dropdown-item" href="Bluetooth-mirror.html" target="_blank">Blue-tooth Mirrors</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <a class="nav-link text-white" href="About.html" target="_blank" style="margin-right: 2.5rem;">About us</a>
+              <a class="nav-link text-white" href="Contact.html" target="_blank" style="margin-right: 2.5rem;">Contact Us</a>
+            </div>
+            <div class="navbar-nav text-white" style="margin-left: 10.625rem;">
+              <a class="nav-link" href="#">
+                <i class="bi bi-search" style="font-size: 1.5rem;" data-toggle="tooltip" title="search"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="bi bi-heart" style="font-size: 1.5rem;" data-toggle="tooltip" title="Wishlist"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="bi bi-cart" style="font-size: 1.5rem;" data-toggle="tooltip" title="View Cart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+  
+      <Script>
+        
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  
+  
+      <!-- navbar end -->
+
+      <!-- Main header image -->
+
+      <div style="position: relative;">
+        <img src="Drawing/drawing-main.jpg" alt="">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin-left: -10rem;">
+          <h1 class="animated-text" style="color: white; font-size: 45px; font-family: 'Times New Roman', Times, serif; margin-top: 19rem;"><b>Drawing Room Mirrors | Clear Reflections</b></h1>
+        </div>
+      </div>
+
+      <div style="margin-top: 80px;">
+        <h1 class="text-info" style="font-family: 'Times New Roman', Times, serif; text-align: center; font-size: 50px;"><b>Reflections of Elegance</b></h1>
+        <p style="color: white; font-family: 'Times New Roman', Times, serif; text-align: center; font-size: 20px;">"Where Art and Beauty Converge"</p>
+      </div>
+
+      <!-- Card start -->
+
+      <div class="container text-center"  style="margin-top: 80px; font-family: 'Times New Roman', Times, serif;">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+              <img src="Drawing/D1.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+              <img src="Drawing/D1a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> GI SILVER DIAMOND MIRROR</h5></a>
+             <p class="pr-detail"> This decorative Mirror is one of the best design of all time in modern and classical 
+              interiors. It gives royal feel to your home,this mirror can be used in bedroom, drawing room, entry foyer etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 25,000 | <del>29,000</del></p>
+                <a href="Drawing/GI Silver Diamond DC Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+              <img src="Drawing/D2.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+              <img src="Drawing/D2a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> BROWN-X DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> This mirror purely has a feel of contemporary architecture, PU walnut finish makes 
+              it so rich and luxurious, It gives royal look to your home,
+              this mirror can be used in bedroom, Lobby, Dresser, drawing room etc.
+              The mirror is manufactured by our well skilled team who assures the best quality of every mirror product. </p>
+                <p class="card-text ">Price : 19,999 | <del>23,500</del></p>
+                <a href="Drawing/Brown.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+              
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+              <img src="Drawing/D3.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+              <img src="Drawing/D3a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> UP & DOWN DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> This is One of the luxurious and inspiring mirror concept, It gives royal feel to your home,
+              this mirror can be used in bedroom, drawing room, entry foyer etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 13,899 | <del>17,500</del></p>
+                <a href="Drawing/Up.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D4.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D4a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> 16 BALLS DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail">  One of the luxurious mirror which is an inspiring mirror concept, 
+              It gives royal feel to your home,this mirror can be used in bedroom, drawing room, entry foyer etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of <br>every mirror. </p>
+                <p class="card-text ">Price : 30,500 | <del>37,000</del></p>
+                <a href="Drawing/16 Balls Decorative Mirrors.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+                     
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D5.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D5a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> BLUE VELVET ROUND MIRROR </h5></a>
+             <p class="pr-detail"> This decorative Mirror is one of the best design of all time in modern and classical interiors
+              It gives royal feel to your home,this mirror can be used in bathroom, bedroom, drawing room, entry foyer etc.
+             The mirror has been manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 8,000 | <del>10,000</del></p>
+                <a href="Drawing/Blue Velvet Round Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D6.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D6a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> GOLD VERSACE DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> This golden mirror purely has a feel of contemporary architecture, 
+              It gives royal look to your home,this mirror can be used in Bedroom, Lobby, Dresser, drawing room etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 20,000 | <del>23,500</del></p>
+                <a href="Drawing/Gold Versace Decorative Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D7.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D7a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> PEONY YELLOW DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> This decorative Mirror is one of the best design of all time in modern and classical interiors. It gives royal feel to your home,this mirror can be used in bathroom, bedroom, drawing room, entry foyer etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 15,999 | <del>18,000</del></p>
+                <a href="Drawing/Peony Yellow Decorative Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D8.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D8a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> LUXURY HERON DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> Luxury heron decorative mirror purely has a feel of contemporary architecture, 
+              It gives royal look to your home,this mirror can be used in bedroom,living room, Dresser, drawing room etc.
+              The mirror is manufactured by our well skilled team who assures the best quality of every mirror product. </p>
+                <p class="card-text ">Price : 16,500 | <del>20,500</del></p>
+                <a href="Drawing/Luxury Heron Decorative Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D9.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D9a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> ITALIAN GOLD MOSAIC DG MIRROR</h5></a>
+             <p class="pr-detail"> Italian Gold Mosaic tile Mirror is best for those who like Gold in a way of 
+              inspiring concept of Contemporary design and idea in their home,
+              this mirror can be used in bedroom, drawing room, entry foyer, etc.
+              The mirror is manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 13,500 | <del>17,900</del></p>
+                <a href="Drawing/Italian Gold Mosaic DG Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D10.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D10a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> LEAF LOVE DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> Leaf Love mirror has a concept driven from Italian Interior , 
+              It gives Luxurious feel to your home,this mirror can be used in bedroom, drawing room, entry foyer etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of <br>every mirror. </p>
+                <p class="card-text ">Price : 25,900 | <del>28,500</del></p>
+                <a href="Drawing/Leaf Love Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D11.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D11a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> R-SQUIRE BRASS DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> This brass framed mirror is One of the luxurious mirror in a way of inspiring 
+              concept of Contemporary design and idea,
+              this mirror can be used in bedroom, drawing room, entry foyer, above Console etc.
+              The mirror is manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 28,000 | <del>33,500</del></p>
+                <a href="Drawing/R.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D12.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D12a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> FAB VELVET DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> This velvet fabric decorative mirror purely has a feel of contemporary architecture, 
+              It gives royal look to your home,this mirror can be used in Bedroom, Lobby, Dresser, drawing room etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of every mirror product. </p>
+                <p class="card-text ">Price : 18,500 | <del>22,000</del></p>
+                <a href="Drawing/Fab Velvet Decorative Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D13.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D13a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> SUN BURST D9 DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> This golden mirror is One of the luxurious mirror in a way of inspiring 
+              concept of Contemporary design and idea, It gives royal feel to your home,
+              this mirror can be used in bedroom, drawing room, entry foyer, above Console etc.
+              The mirror is manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 27,500 | <del>30,000</del></p>
+                <a href="Drawing/Sun Burst D9 Decorative Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D14.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D14a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> TEAK-BOWL DECORATIVE MIRROR </h5></a>
+             <p class="pr-detail"> This is a handcrafted mirror, a whole new concept of changing perception of choice 
+              in term of modern architecture, It gives Luxurious feel to your home,this mirror can be used in bedroom, 
+              drawing room, entry foyer etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of every mirror. </p>
+                <p class="card-text ">Price : 24,800 | <del>25,900</del></p>
+                <a href="Drawing/Teak.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="image-container">
+                  <img src="Drawing/D15.jpg" class="card-img-top" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+                  <img src="Drawing/D15a.jpg" class="card-img-top hover-image" alt="Mirror 1" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <div class="card-body">
+             <a href="#" style="text-decoration: none;"><h5 class="card-title "> PURE LVORY MOP<br> MIRROR </h5></a>
+             <p class="pr-detail"> This mother of Pearl Mirror is a handcrafted original mother of pearl (seep) collected 
+              from ocean. It gives Luxurious feel to your home<br>This mirror can be used in bedroom, drawing room, 
+              entry foyer, above console etc.
+              The mirror has been manufactured by our well skilled team who assures the best quality of <br> every mirror. </p>
+                <p class="card-text ">Price : 23,500 | <del>27,000</del></p>
+                <a href="Drawing/Pure Ivory MOP Mirror.docx"><button type="button" class="btn btn-info">Read more</button></a>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+
+      <!-- Card end -->
+      
+
+      <!-- Footer start -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div style="font-size: 25px; font-family: 'Times New Roman', Times, serif;" class="me-5 d-none d-lg-block text-info">
+        <span>Get Connected with us on Social Networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i style="font-size:35px;" class="bi bi-facebook"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=92165180043" target="_blank" class="me-4 link-secondary">
+            <i  style="font-size:35px;"class="bi bi-whatsapp"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i style="font-size:35px;" class="bi bi-instagram"></i style="font-size:35px;">
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i  style="font-size:35px;"class="bi bi-youtube"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i  style="font-size:35px;"class="bi bi-telegram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i  style="font-size:35px;"class="bi bi-twitter"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-info"  style="font-family: 'Times New Roman', Times, serif;">
+              <i class="fas fa-gem me-3 text-secondary"></i>Clear Reflections
+            </h6>
+            <p class="text-white"  style="font-family: 'Times New Roman', Times, serif;">
+              With over 20 Years of Experience in the Architectural and Interior Design Industry, 
+              We are a Renowned Company Catering to Residential and Commercial Projects throughout Pakistan. 
+              Having Successfully Completed over 1000 Projects, We have Earned a Reputation for our Expertise and Dedication.  
+               Join us on this exciting Journey as we Revolutionize the Online Design Landscape and Create 
+               Stunning Spaces that Inspire and Captivate.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="font-family: 'Times New Roman', Times, serif;">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-info">
+              Products
+            </h6>
+            <p class="text-white">
+              <a href="Bedroom-mirrors.html" class="text-reset">Bedroom Mirrors</a>
+            </p>
+            <p class="text-white">
+              <a href="Bathroom.html" class="text-reset">Bathroom Mirrors</a>
+            </p>
+            <p class="text-white">
+              <a href="Drawing-room.html" class="text-reset">Drawing room Mirrors</a>
+            </p>
+            <p class="text-white">
+              <a href="LED-mirror.html" class="text-reset">LED Mirrors</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="font-family: 'Times New Roman', Times, serif;">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-info">
+              Useful links
+            </h6>
+            <p class="text-white">
+              <a href="#!" class="text-reset">My Accounts</a>
+            </p>
+            <p class="text-white">
+              <a href="#!" class="text-reset">FAQ's</a>
+            </p>
+            <p class="text-white">
+              <a href="#!" class="text-reset">Wish list</a>
+            </p>
+            <p class="text-white">
+              <a href="#!" class="text-reset">Return and Breakage Policy</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="font-family: 'Times New Roman', Times, serif;">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-info" >Contact</h6>
+            <p class="text-white"><i class="fas fa-home me-1 text-secondary"></i> Near CDC house Shahrah-e-Faisal Road Karachi </p>
+            <p class="text-white">
+              <i class="fas fa-envelope me-1 text-secondary"></i>
+              clearreflection@gmail.com
+            </p>
+            <p class="text-white"><i class="fas fa-phone me-1 text-secondary"></i> 0316-5180043</p>
+            <p class="text-white"><i class="fas fa-print me-1 text-secondary"></i> 0349-3378370</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4 text-success" style="background-color: rgba(0, 0, 0, 0.025); font-family: 'Times New Roman', Times, serif;">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="index.html">clearreflections.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+     <!-- Footer end -->
+    
+</body>
+</html>
